@@ -44,8 +44,10 @@ function App() {
         <TextField
         variant="filled"
         color='secondary'
-        type="time"
-        label="The time"
+        type="email"
+        label="Email"
+        // value="test@test.com"
+        placeholder="test@test.com"
         />
        <CheckboxExample />
       <ButtonGroup
