@@ -8,8 +8,8 @@ import DeleteIcon from '@material-ui/icons/Delete'
 import Checkbox  from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import TextField from '@material-ui/core/TextField';
-import {makeStyles} from '@material-ui/core/styles';
-
+import {makeStyles, ThemeProvider, createMuiTheme} from '@material-ui/core/styles';
+import { green, orange } from '@material-ui/core/colors';
 
 const useStyles = makeStyles({
   root:{
@@ -19,6 +19,17 @@ const useStyles = makeStyles({
     marginBotttom: 15,
     color:'white',
     padding: '5px 30px'
+  }
+})
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: orange[500],
+    },
+    secondary:{
+      main: green[500],
+    }
   }
 })
 
@@ -56,6 +67,7 @@ function CheckboxExample(){
 
 function App() {
   return (
+    <ThemeProvider theme = {theme}>
     <div className="App">
       <header className="App-header">
         <ButtonStyled/>
@@ -89,6 +101,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
     </div>
+    </ThemeProvider>
   );
 }
 
