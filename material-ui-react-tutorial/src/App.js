@@ -15,6 +15,10 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid'
+import AppBar  from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/IconButton'
+import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles({
   root:{
@@ -33,14 +37,6 @@ const theme = createMuiTheme({
       fontSize:24,
     }
   },
-  palette: {
-    primary: {
-      main: orange[500],
-    },
-    secondary:{
-      main: green[500],
-    }
-  }
 })
 
 function ButtonStyled(){
@@ -82,6 +78,23 @@ function App() {
        {/* for maxWidth, sm means small which is for 700 px, xs is for mobile size, md is for medium size, and lg is for larger size */}
       <div className="App">
         <header className="App-header">
+          <AppBar color="secondary">
+            <Toolbar>
+              <IconButton>
+                <MenuIcon/>
+              </IconButton>
+
+              <Typography variant ="h6">
+                MUI Theming
+              </Typography>
+              <Button>
+                Login
+              </Button>
+
+            </Toolbar>
+          </AppBar>
+
+
           <Typography variant='h2'>
             Welcome to MUI
           </Typography>
