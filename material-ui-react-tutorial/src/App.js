@@ -7,13 +7,14 @@ import SaveIcon from '@material-ui/icons/Save'
 import DeleteIcon from '@material-ui/icons/Delete'
 import Checkbox  from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import TextField from '@material-ui/core/TextField';
+// import TextField from '@material-ui/core/TextField';
 import {makeStyles, ThemeProvider, createMuiTheme} from '@material-ui/core/styles';
 import { green, orange } from '@material-ui/core/colors';
 import 'fontsource-roboto';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-
+import Paper from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid'
 
 const useStyles = makeStyles({
   root:{
@@ -88,14 +89,18 @@ function App() {
             Learn how to use Material Ui
           </Typography>
           <ButtonStyled/>
-          <TextField
-            variant="filled"
-            color='secondary'
-            type="email"
-            label="Email"
-            // value="test@test.com"
-            placeholder="test@test.com"
-          />
+          {/* Grid can either be a container or it can be an item */}
+          <Grid container>
+          <Grid item xs={12} sm={6} >
+            <Paper style={{ height:100, width:'100%', color:'white' }} />
+          </Grid>
+          <Grid item lg={3}>
+            <Paper style={{ height:100, width:50, color:'white' }} />
+          </Grid>
+          <Grid item lg={3}>
+            <Paper style={{ height:100, width:50, color:'white' }} />
+          </Grid>
+          </Grid>
         <CheckboxExample />
         <ButtonGroup
           size="large"
