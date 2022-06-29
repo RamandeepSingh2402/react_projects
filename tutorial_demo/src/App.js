@@ -2,9 +2,12 @@ import {Route, Switch} from "react-router-dom";
 import RegisterPage from "./pages/Register"
 import LoginPage from "./pages/Login"
 import HomePage from "./pages/Home"
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
+    <>
+    <Navigation/>
     <Switch>
 
       <Route path="/register">
@@ -20,6 +23,7 @@ function App() {
       </Route>
 
     </Switch>
+    </>
   );
 }
 
