@@ -15,7 +15,7 @@ function ViewBoards(props) {
                                         {board.name}
                                     </Typography>
                                     <Typography component='p' variant='p'>
-                                        {board.desp}
+                                        {board.description}
                                     </Typography>
                                     <Button variant='contained' sx={{ marginTop: '16px' }}>
                                         View All Tasks
@@ -31,3 +31,13 @@ function ViewBoards(props) {
 };
 
 export default ViewBoards;
+
+/**
+ * We use grids, as it helps us to build responsive behaviour
+ * which means, when the screen size is  resized, changes are seen accordingly
+ * grid items have sizes defined
+ * like for the example above, in extra small and small space, one card component occupies 12 boxes, in medium screen size, each card component has 4 boxes, and in large screen, each has 3 boxes
+ * If we're getting the cross controller failed or blocked error (or anything like that)
+ * then in the Controller, we have to add "@CrossOrigin", then we'll be able to call the API using the react application
+ * 
+*/
