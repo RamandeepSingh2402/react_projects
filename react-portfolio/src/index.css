@@ -1,11 +1,26 @@
+html{
+  font-size: 62.5%;
+}
+
+
+
+
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
+  font-family: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
+
+  /*weight of the font of the body is 300, the size is 11px, and the line height is 1.4 */
+  color: #444;
+  background: #022c43;
+  overflow: hidden;
+  display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

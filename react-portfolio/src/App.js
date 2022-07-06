@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {Routes, Route} from 'react-router-dom';
+import Layout from './components/Layout';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element ={<Layout/>} />
+      </Routes>
     </div>
   );
 }
 
 export default App;
+
+
+
+// INSTALLED LIBRARIES:
+// emailjs/browser (for contact form), @fortawesome/free-brands-svg-icons (for font icons), @fortawesome/free-solid-svg-icons (for navigation bar on the left side), @fortawesome/react-fontawesome, animate.css (css library for animating the fonts and objects), @gsap-trial (for more animation (we've used trial as we didnt want to create an account)), loaders.css (package for loaders), react-leaflet (for the maps in the contact page, it is a library for the big maps), react-loaders (for react integration, so that it's easy for integration of react), react-router-dom (will help us to navigate through our website), sass (helps us to write less code, and to use some of the operations like for loops in variables)
