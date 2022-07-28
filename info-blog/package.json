@@ -20,7 +20,7 @@
   "eslintConfig": {
     "extends": [
       "react",
-      "react-app/jest"
+      "react/jest"
     ]
   },
   "browserslist": {
