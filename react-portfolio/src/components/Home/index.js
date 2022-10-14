@@ -4,6 +4,7 @@ import './index.scss'
 import { useDebugValue, useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import Sidebar from '../Sidebar';
+import Logo from './Logo';
 
 const Home = () => {
 
@@ -77,6 +78,7 @@ const Home = () => {
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link> 
 
             </div>
+            < Logo />
         </div>
     );
 }
