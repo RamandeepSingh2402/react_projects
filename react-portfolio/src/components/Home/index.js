@@ -1,18 +1,20 @@
 import { Link } from 'react-router-dom';
-import LogoTitle from '../../assets/images/logo-s.png'
 import './index.scss'
-import { useDebugValue, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import Sidebar from '../Sidebar';
-import Logo from './Logo';
+import Loader from 'react-loaders';
 
 const Home = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate');
 
     const nameArray = 
-    ['a',
-     'm',
+    [
+      ' ',  
+      'R',
+      'a',
+      'm',
       'a', 
       'n', 
       'd', 
@@ -56,6 +58,7 @@ const Home = () => {
     }, []);
 
     return(
+        <>
         <div className="container home-page">
             <Sidebar />
             <div className="text-zone">
@@ -64,22 +67,21 @@ const Home = () => {
                     <span className={`${letterClass} _12`}>i,</span>
                     <br />
                     <span className={`${letterClass} _13`}>I</span>
-                    <span className={`${letterClass} _14`}>'m</span>
-                    <img src={LogoTitle} alt="developer"/>
+                    <span className={`${letterClass} _14`}>'m </span>
                     <AnimatedLetters letterClass={letterClass}
                     strArray={nameArray}
-                    index={15} />
+                    index={16} />
                     <br />
                     <AnimatedLetters letterClass={letterClass}
                     strArray={jobArray}
-                    index={32} />
+                    index={33} />
                 </h1>
                 <h2>Sophomore CS student <br /> Interning with CarteNav.</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link> 
-
             </div>
-            < Logo />
         </div>
+        <Loader type='pacman' />
+        </>
     );
 }
 
