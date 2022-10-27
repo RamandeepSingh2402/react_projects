@@ -45,16 +45,6 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
                     </a>
                 </li>
-
-                {/* <li>
-                    <a 
-                        target="_blank" 
-                        rel='noreferrer' 
-                        href='www.linkedin.com/in/ramandeep-singh-915a91173'
-                    >
-                        <FontAwesomeIcon icon={faGmail} color="#4d4d4e" />
-                    </a>
-                </li> */}
                 
                 <li>
                     <a 
