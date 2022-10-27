@@ -59,8 +59,8 @@ const Home = () => {
 
     return(
         <>
+        { Sidebar }
         <div className="container home-page">
-            <Sidebar />
             <div className="text-zone">
                 <h1>
                     <span className={letterClass}>H</span>

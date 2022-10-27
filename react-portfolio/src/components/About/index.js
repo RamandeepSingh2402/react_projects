@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAndroid, faAngular, faCss3, faGit, faGithub, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faGift } from '@fortawesome/free-solid-svg-icons';
 import Loader from 'react-loaders';
+import Sidebar from '../Sidebar';
 
 const About = () => {
 
